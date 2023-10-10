@@ -1,8 +1,17 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./views/Home";
+
+import "./scss/global.scss";
+
+
+
 function App() {
 
   return (
     <>
-      Mostrador.app
+        <Routes>
+            <Route path='/' element={<Home />} />
+        </Routes>
     </>
   )
 }
