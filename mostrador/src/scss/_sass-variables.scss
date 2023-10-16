@@ -1,0 +1,58 @@
+// Colors
+$color-white: hsl(20 20% 97%); // #F9F7F6
+$color-black: hsl(0 0% 16%); // #262626
+
+// Bg implementation
+$color-bg-white: $color-white;
+$color-bg-black: $color-black;
+
+
+// Font family
+$font-primary: "Archivo Narrow", sans-serif;
+$font-secondary: 'Martian Mono', monospace;
+
+
+// Font weights
+$font-weight-xlight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+
+// Font implementation
+$font-topbar: $font-primary;
+
+
+
+
+// Font size implementations
+$font-size-topbar: 1.6rem;
+$font-size-topbar--large: 4rem;
+
+
+
+
+// Mediaqueries
+$bp-small: 24rem; // 384px 
+$bp-lowermedium: 37rem; // 592px
+$bp-medium: 48rem; // 768px
+$bp-uppermedium: 60rem; // 960px
+$bp-lowerlarge: 75rem; // 1216px
+$bp-large: 90rem; // 1440px
+$bp-xlarge: 120rem; // 1920px
+
+
+// Padding implementations
+
+// Vertical main padding
+$vertical-padding: clamp(1.6rem, 2.88vw + 0.48rem, 6rem);
+
+
+
+// Variables for @each / @for / etc
+
+// Maps
+$map-colors: (
+    "white": $color-white,
+    "black": $color-black
+);

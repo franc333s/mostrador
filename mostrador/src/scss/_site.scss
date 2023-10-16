@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: $color-bg-white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+// Fonts
+
+// Archivo Narrow
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
+// Tiny5
+
+// Martian Mono
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
