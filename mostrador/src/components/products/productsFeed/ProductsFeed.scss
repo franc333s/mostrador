@@ -1,0 +1,24 @@
+@import "../../../scss/sass-variables";
+@import "../../../scss/mixins";
+
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include mq($bp-lowermedium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq($bp-medium) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+        row-gap: 20rem;
+    }
+
+    @include mq($bp-lowerlarge) {
+        grid-template-columns: repeat(4, 1fr);
+
+        
+    }
+}

@@ -1,0 +1,41 @@
+@import "../../../scss/sass-variables";
+@import "../../../scss/mixins";
+
+
+.one-product {
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    position: relative;
+
+    @include mq($bp-lowermedium) {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    &__back {
+       position: absolute;
+       padding-bottom: 0.8rem;
+       z-index: -1;
+    }
+
+    &__front {
+        transition: transform .2s ease-in-out;
+    }
+    &__front:hover {
+        transform: translate(0, -10rem);
+
+    }
+
+
+
+
+
+
+
+    &__img {
+        width: 100%;
+    }
+}

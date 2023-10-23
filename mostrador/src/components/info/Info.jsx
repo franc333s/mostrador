@@ -1,0 +1,54 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import "./Info.scss";
+
+function Info () {
+
+    const [innerTextVisibility, setInnerTextVisibility] = useState({});
+
+    const toggleInnerTextVisibility = (innerTitle) => {
+        setInnerTextVisibility((prevState) => ({
+            ...prevState,
+            [innerTitle]: !prevState[innerTitle],
+        }));
+    }
+
+    return (
+        <>
+        <section className="info">
+            <h1 className="info__title">Mostador / Gallery</h1>
+            <nav className="info__inner">
+                <h2 className="info__inner__title">→ Works, </h2>
+
+                <h2 className="info__inner__title"><Link onClick={() => toggleInnerTextVisibility("works")}>About</Link></h2>
+                
+                {innerTextVisibility["works"] && (
+
+                    <p className="info__inner__text"> &#47;&#47; Founded in 2023, Mostrador is dedicated to showcasing works at the interection of art and design, where the utility of an object meets its aesthetic potential.&emsp;&emsp;Mostrador provides a platform for artists and designers to expertiment with the boundaries of function and form, showcasing both established and emerging talents, at Mostrador we believe that the process of creation is just as imoprtant as the finished product, and our curatorial program highlights the unique narratives behind each piece.&emsp;&emsp;We are committed to promoting access to the arts, advocating for diversity in design, and exploring the intersections of disciplines. Through our works and publications, we strive to inspire and challenge the perceptions of what is posible in design</p>
+
+                )}
+                
+                <h2 className="info__inner__title">, <Link onClick={() => toggleInnerTextVisibility("contact")}>Contact</Link></h2>
+                
+                {innerTextVisibility["contact"] && (
+
+                    <p className="info__inner__text"> &#47;&#47; info@mostradorgallery.com</p>
+                
+                )}
+                
+                <h2 className="info__inner__title">, <Link onClick={() => toggleInnerTextVisibility("instagram")}>Instagram</Link></h2>
+                
+                {innerTextVisibility["instagram"] && (
+
+                    <p className="info__inner__text"> &#47;&#47; @<Link  >mostradorgallery</Link></p>
+
+                )}
+
+            </nav>
+        </section>
+        </>
+    )
+}
+
+export default Info;

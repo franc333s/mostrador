@@ -1,6 +1,6 @@
 // Colors
-$color-white: hsl(20 20% 97%); // #F9F7F6
-$color-black: hsl(0 0% 16%); // #262626
+$color-white: hsl(0, 0%, 100%); // #FFFFFF
+$color-black: hsl(0, 0%, 10%); // #1A1A1A
 
 // Bg implementation
 $color-bg-white: $color-white;
@@ -20,14 +20,9 @@ $font-weight-bold: 700;
 
 
 // Font implementation
-$font-topbar: $font-primary;
-
-
-
 
 // Font size implementations
-$font-size-topbar: 1.6rem;
-$font-size-topbar--large: 4rem;
+
 
 
 
