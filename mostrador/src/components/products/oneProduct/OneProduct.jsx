@@ -17,7 +17,7 @@ function OneProduct({ index, productImg, productName, productType, designer, spe
                 <div className="one-product__meas">{specifications}</div>
                 <div className="one-product__price">{price}</div>
             </div>
- 
+
         </article>
         </>
     )
