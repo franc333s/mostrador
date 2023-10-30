@@ -1,0 +1,18 @@
+@import "../../scss/sass-variables";
+@import "../../scss/mixins";
+
+.bg-video {
+    transform: rotate(90deg);
+    width: 100%;
+
+
+    @include mq($bp-medium) {
+        transform: rotate(0deg);
+        width: 100%;
+        height: auto;
+
+
+    }
+   
+
+}

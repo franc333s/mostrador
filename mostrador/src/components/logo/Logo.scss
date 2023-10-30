@@ -3,11 +3,16 @@
 
 
 .logo {
-    fill: #fff;
+    fill: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 6rem;
     z-index: 3;
+}
+
+.logo--static {
+    position: absolute;
+    top: 75rem;
 }

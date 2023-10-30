@@ -21,12 +21,19 @@ import "./Logo.scss"
 const Logo = () => {
 
     const [ scrollY, setScrollY ] = useState(0);
+    const [ addStaticClass, setAddStaticClass ] = useState(false);
 
     useEffect(() => {
 
         const handleScroll = () => {
             setScrollY(window.scrollY);
-        }
+
+            if (window.scrollY > 750) {
+                setAddStaticClass(true);
+            } else {
+                setAddStaticClass(false);
+            }
+        };
 
         window.addEventListener("scroll", handleScroll);
 
@@ -71,7 +78,7 @@ const Logo = () => {
     
     return (
             <>
-                <div className="logo">
+                <div className={`logo ${addStaticClass ? "logo--static" : ""}`}>
 
                     {logoContent}
                 

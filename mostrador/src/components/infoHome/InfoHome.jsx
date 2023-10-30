@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "./Info.scss";
+import "./InfoHome.scss";
 
-function Info () {
+function InfoHome () {
 
     const [innerTextVisibility, setInnerTextVisibility] = useState({});
 
@@ -51,4 +51,4 @@ function Info () {
     )
 }
 
-export default Info;
+export default InfoHome;

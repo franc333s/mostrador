@@ -1,19 +1,14 @@
-import Info from "../components/info/info";
-import Logo from "../components/logo/Logo";
+import InfoHome from "../components/infoHome/InfoHome";
 import ProductsFeed from "../components/products/productsFeed/ProductsFeed";
-import YoutubeEmbed from "../components/YoutubeEmbed/YoutubeEmbed";
-YoutubeEmbed
+import HeroHome from "../components/heroHome/HeroHome";
+
 
 
 function Home() {
     return (
         <>
-            <div>
-                <YoutubeEmbed embedId="x7EgG-MuCDY"/>
-                <Logo />
-            </div>
-            
-            <Info />
+            <HeroHome />
+            <InfoHome />
             <ProductsFeed />
         </>
     );
