@@ -3,11 +3,14 @@
 
 
 .one-product {
+    color: $color-black;
     font-size: 1.8rem;
-    display: grid;
-    grid-template-columns: 1fr;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    z-index: 2;
 
     position: relative;
+    padding-bottom: 4rem;
 
     @include mq($bp-lowermedium) {
         display: flex;
@@ -16,21 +19,27 @@
     }
 
     &__back {
-       position: absolute;
-       padding-bottom: 0.8rem;
-       z-index: -1;
+        z-index: -1;
+
+        @include mq($bp-medium) {
+            position: absolute;
+            padding-bottom: .8rem;
+
+        }
+    
+
     }
 
     &__front {
         transition: transform .2s ease-in-out;
     }
+
     &__front:hover {
-        transform: translate(0, -10rem);
 
+        @include mq($bp-medium) {
+            transform: translate(0, -10rem);
+        }
     }
-
-
-
 
 
 

@@ -3,8 +3,12 @@
 
 
 .products {
+    color: $color-black;
+    background-color: $color-bg-white;
+    padding-top: clamp(4rem, 13.07vw + -1.1rem, 24rem);
     display: grid;
     grid-template-columns: 1fr;
+    z-index: 1;
 
     @include mq($bp-lowermedium) {
         grid-template-columns: repeat(2, 1fr);

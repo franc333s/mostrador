@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./InfoHome.scss";
 
 function InfoHome () {
 
+    //Text visibility set in links
     const [innerTextVisibility, setInnerTextVisibility] = useState({});
 
     const toggleInnerTextVisibility = (innerTitle) => {
@@ -14,9 +15,34 @@ function InfoHome () {
         }));
     }
 
+    //Fixing nav bar on top of screen when certain hight is reached
+    const [ scrollY, setScrollY ] = useState(0);
+    const [ addStaticClass, setAddStaticClass ] = useState(false);
+
+    useEffect(() => {
+
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+
+            if (window.scrollY > 820) {
+                setAddStaticClass(true);
+            } else {
+                setAddStaticClass(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <>
-        <section className="info">
+
+
+        <section className={`info ${addStaticClass ? "info--fixed" : ""}`}>
             <h1 className="info__title">Mostador / Gallery</h1>
             <nav className="info__inner">
                 <h2 className="info__inner__title">→ Works, </h2>

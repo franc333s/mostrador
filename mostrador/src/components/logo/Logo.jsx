@@ -28,7 +28,7 @@ const Logo = () => {
         const handleScroll = () => {
             setScrollY(window.scrollY);
 
-            if (window.scrollY > 750) {
+            if (window.scrollY > 600) {
                 setAddStaticClass(true);
             } else {
                 setAddStaticClass(false);
@@ -44,33 +44,33 @@ const Logo = () => {
 
     let logoContent;
 
-        if (scrollY < 50) {
+        if (scrollY < 40) {
             logoContent = <Logo20 />;
-        } else if (scrollY < 100) {
+        } else if (scrollY < 80) {
             logoContent = <Logo40 />;
-        } else if (scrollY < 150) {
+        } else if (scrollY < 120) {
             logoContent = <Logo60 />;
-        } else if (scrollY < 200) {
+        } else if (scrollY < 160) {
             logoContent = <Logo80 />;
-        } else if (scrollY < 250) {
+        } else if (scrollY < 200) {
             logoContent = <Logo100 />;
-        } else if (scrollY < 300) {
+        } else if (scrollY < 240) {
             logoContent = <Logo120 />;
-        } else if (scrollY < 350) {
+        } else if (scrollY < 280) {
             logoContent = <Logo140 />;
-        } else if (scrollY < 400) {
+        } else if (scrollY < 320) {
             logoContent = <Logo160 />;
-        } else if (scrollY < 450) {
+        } else if (scrollY < 360) {
             logoContent = <Logo180 />;
-        } else if (scrollY < 500) {
+        } else if (scrollY < 400) {
             logoContent = <Logo200 />;
-        } else if (scrollY < 550) {
+        } else if (scrollY < 440) {
             logoContent = <Logo220 />;
-        } else if (scrollY < 600) {
+        } else if (scrollY < 480) {
             logoContent = <Logo240 />;
-        } else if (scrollY < 650) {
+        } else if (scrollY < 520) {
             logoContent = <Logo260 />;
-        } else if (scrollY < 700) {
+        } else if (scrollY < 560) {
             logoContent = <Logo280 />;
         } else {
             logoContent = <Logo300 />;

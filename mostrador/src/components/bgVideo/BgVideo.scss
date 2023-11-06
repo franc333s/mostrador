@@ -2,17 +2,13 @@
 @import "../../scss/mixins";
 
 .bg-video {
-    transform: rotate(90deg);
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
-
-    @include mq($bp-medium) {
-        transform: rotate(0deg);
+    &--mob,
+    &--des {
         width: 100%;
-        height: auto;
-
-
     }
-   
-
 }

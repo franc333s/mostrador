@@ -2,3 +2,12 @@
 @import "../../scss/mixins";
 
 
+
+.hero {
+    z-index: -2;
+    min-height: 84rem;
+
+    @include mq($bp-xlarge) {
+        min-height: 100vh;
+    }
+}
