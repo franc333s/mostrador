@@ -7,7 +7,9 @@
     left: 0;
     z-index: -1;
 
-    &--mob,
+    &--mob {
+        height: 100vh;
+    }
     &--des {
         width: 100%;
     }
