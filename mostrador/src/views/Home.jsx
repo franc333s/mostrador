@@ -9,7 +9,6 @@ function Home() {
         <>
             <HeroHome />
             <InfoHome />
-            <InfoHome />
             <ProductsFeed />
         </>
     );
