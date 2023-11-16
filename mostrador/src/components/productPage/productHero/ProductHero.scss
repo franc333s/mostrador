@@ -1,0 +1,14 @@
+@import "../../../scss/sass-variables";
+@import "../../../scss/mixins";
+
+.product-hero {
+
+    &__img {
+        width: 100%;
+
+        @include mq($bp-lowerlarge) {
+            height: 90vh;
+            object-fit: cover;
+        }
+    }
+}

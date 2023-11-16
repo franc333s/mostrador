@@ -10,8 +10,10 @@
     grid-template-columns: 1fr;
     z-index: 1;
 
+
     @include mq($bp-lowermedium) {
         grid-template-columns: repeat(2, 1fr);
+        align-items: end;
     }
 
     @include mq($bp-medium) {

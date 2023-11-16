@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import db from "../../../firebase/config";
 import OneProduct from "../oneProduct/OneProduct";
-//import productsData from "../../../json/productsData.json"
 import "./ProductsFeed.scss";
 
 
@@ -37,11 +36,14 @@ function ProductsFeed() {
             {products.map((product) => 
             <OneProduct 
                 key={product.id}
+                url={product.url}
                 index={product.index}
                 productName={product.productName}
                 productImg={product.productImg}
+                productImgAltText={product.productImgAltText}
                 productType={product.productType}
                 designer={product.designer}
+                material={product.material}
                 specifications={product.specifications}
                 price={product.price}
             />
