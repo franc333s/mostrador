@@ -11,14 +11,14 @@ function OneProduct({ url, index, productImg, productImgAltText, productName, pr
 
             <article className="one-product">
                     <div className="one-product__front">
-                        <div className="one-product__id">/ {index}</div>
+                        <p className="one-product__id">/ {index}</p>
                         <img className="one-product__img" src={productImg} alt={productImgAltText} />
                     </div>
 
                     <div className="one-product__back">
-                        <div className="one-product__info"><span className="text-dec--underline"><span className="text-trans--uppercase">{productName}</span>, {productType}</span>. {designer}</div>
-                        <div className="one-product__meas">{material}. {specifications}</div>
-                        <div className="one-product__price">Inquire</div>
+                        <p className="one-product__info"><span className="text-dec--underline"><span className="text-trans--uppercase">{productName}</span>, {productType}</span>. {designer}</p>
+                        <p className="one-product__meas">{material}. {specifications}</p>
+                        <p className="one-product__price">Inquire</p>
                     </div>
 
             </article>

@@ -1,0 +1,30 @@
+@import "../../../scss/sass-variables";
+@import "../../../scss/mixins";
+
+.product-desc {
+    font-size: 2rem;
+    //canviar font-size
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: clamp(2.8rem, 3.17vw + 1.56rem, 4rem);;
+
+    &__title {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    &__aside {
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+    }
+
+    &__cta {
+        text-transform: uppercase;
+
+        & > a {
+            text-decoration: none;
+        }
+    }
+}

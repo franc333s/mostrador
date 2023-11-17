@@ -1,11 +1,11 @@
 import "./ProductHero.scss"
 
-function ProductHero() {
+function ProductHero({ heroImg, heroImgAltText }) {
 
     return (
         <>
         <section className="product-hero">
-            <img className="product-hero__img" src="/public/cc-table-cuatro-cuatros-2022.webp" alt="blabla blababla" />
+            <img className="product-hero__img" src={heroImg} alt={heroImgAltText} />
         </section>
         </>
     )

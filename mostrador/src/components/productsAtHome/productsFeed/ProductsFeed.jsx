@@ -45,7 +45,6 @@ function ProductsFeed() {
                 designer={product.designer}
                 material={product.material}
                 specifications={product.specifications}
-                price={product.price}
             />
             )}  
         </section>
