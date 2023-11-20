@@ -37,7 +37,7 @@ function ProductPage() {
                 edition={product.edition}
             />
 
-            <ProductGallery />
+            <ProductGallery product={product} />
 
         </main>
         </>

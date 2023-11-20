@@ -1,0 +1,32 @@
+@import "../../../scss/sass-variables";
+@import "../../../scss/mixins";
+
+.product-hl {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include mq($bp-medium) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include mq($bp-lowerlarge) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 2rem;
+        white-space: nowrap;
+
+        &--variation {
+            font-family: $font-secondary;
+            font-size: clamp(10rem, 5.71vw + 7.77rem, 16rem);;
+            text-transform: uppercase;
+        }
+    }
+
+}

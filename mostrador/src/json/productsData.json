@@ -11,7 +11,30 @@
         "dimensions": "45x44x120 [cm]",
         "nameSecondary": "Gesto",
         "about": "Founded in 2023, Mostrador is dedicated to showcasing works at the interection of art and design, where the utility of an object meets its aesthetic potential.&emsp;&emsp;Mostrador provides a platform for artists and designers to expertiment with the boundaries of function and form, showcasing both established and emerging talents, at Mostrador we believe that the process of creation is just as imoprtant as the finished product, and our curatorial program highlights the unique narratives behind each piece.&emsp;&emsp;We are committed to promoting access to the arts, advocating for diversity in design, and exploring the intersections of disciplines. Through our works and publications, we strive to inspire and challenge the perceptions of what is posible in design.",
-        "edition": "Limited Ed."
+        "edition": "Limited Ed.",
+        "gallery": [
+            {
+                "id": 1,
+                "index": "01",
+                "figText": "Concept, inspiration",
+                "figImg": "/cc-table-cuatro-cuatros-2022.webp",
+                "figImgAltText": "Uno de los productos"
+            },
+            {
+                "id": 2,
+                "index": "02",
+                "figText": "Concept, inspiration",
+                "figImg": "/mostrador.png",
+                "figImgAltText": "Otro de los productos"
+            },
+            {
+                "id": 3,
+                "index": "03",
+                "figText": "Concept, inspiration",
+                "figImg": "/gesto.png",
+                "figImgAltText": "Uno de los productos"
+            }
+        ]
     },
     {
         "id": 2,

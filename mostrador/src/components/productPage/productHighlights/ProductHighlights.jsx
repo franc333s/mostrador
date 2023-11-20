@@ -1,39 +1,39 @@
-
+import "./ProductHighlights.scss"
 
 function ProductHighlights({ name, by, year, material, dimensions, nameSecondary }) {
 
     return (
         <>
-        <section>
+        <section className="product-hl">
                 <div>
-                    <p>Name</p>
-                    <h1>{name}</h1>
+                    <p className="product-hl__title">Name</p>
+                    <h1 className="product-hl__text">{name}</h1>
                 </div>
 
                 <div>
-                    <p>By</p>
-                    <h2>{by}</h2>
+                    <p className="product-hl__title">By</p>
+                    <h2 className="product-hl__text">{by}</h2>
                 </div>
 
                 <div>
-                    <p>Year</p>
-                    <p>{year}</p>
+                    <p className="product-hl__title">Year</p>
+                    <p className="product-hl__text">{year}</p>
                 </div>
 
                 <div>
                     <div>
-                        <p>Material</p>
-                        <p>{material}</p>
+                        <p className="product-hl__title">Material</p>
+                        <p className="product-hl__text">{material}</p>
                     </div>
 
                     <div>
-                        <p>Dimensions</p>
-                        <p>{dimensions}</p>
+                        <p className="product-hl__title">Dimensions</p>
+                        <p className="product-hl__text">{dimensions}</p>
                     </div>
                 </div>
 
                 <div>
-                    <p>{nameSecondary}</p>
+                    <p className="product-hl__text--variation">{nameSecondary}</p>
                 </div>
             </section>
         </>

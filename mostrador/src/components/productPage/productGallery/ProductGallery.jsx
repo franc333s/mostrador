@@ -1,22 +1,19 @@
 import ProductGalleryItem from "../productGalleryItem/ProductGalleryItem"
 import "./ProductGallery.scss"
 
-import oneProductImg from "./../../../json/oneProductImg.json";
-
-
-function ProductGallery() {
+function ProductGallery({ product }) {
 
     return (
         <>
         <section className="gallery">
 
-            {oneProductImg.map((product) => 
+            {product && product.gallery && product.gallery.map((item) => 
             <ProductGalleryItem 
-                key={product.id}
-                index={product.index}
-                figText={product.figText}
-                figImg={product.figImg}
-                figImgAltText={product.figImgAltText}
+                key={item.id}
+                index={item.index}
+                figText={item.figText}
+                figImg={item.figImg}
+                figImgAltText={item.figImgAltText}
             />
             )}  
         </section>
