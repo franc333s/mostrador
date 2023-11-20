@@ -44,7 +44,7 @@ function ProductsFeed() {
                 productType={product.productType}
                 designer={product.designer}
                 material={product.material}
-                specifications={product.specifications}
+                dimensions={product.dimensions}
             />
             )}  
         </section>

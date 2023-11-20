@@ -11,8 +11,6 @@
     position: relative;
     padding-bottom: 4rem;
 
-    background-color: red;
-
 
     @include mq($bp-lowermedium) {
         display: flex;

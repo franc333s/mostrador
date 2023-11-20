@@ -2,20 +2,20 @@ import { Link } from "react-router-dom"
 import "./ProductDescription.scss"
 
 
-function ProductDescription({ about, edition }) {
+function ProductDescription({ productDescription, editionType }) {
 
     return (
         <>
         <section className="product-desc">
                 <div>
                     <h3 className="product-desc__title">About</h3>
-                    <p>{about}</p>
+                    <p>{productDescription}</p>
                 </div>
 
                 <aside className="product-desc__aside">
                     <div>
                         <h3 className="product-desc__title">Edition</h3>
-                        <p>{edition}</p>
+                        <p>{editionType}</p>
                     </div>
 
                     <div>

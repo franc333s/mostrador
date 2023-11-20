@@ -7,7 +7,7 @@ function ProductGallery({ product }) {
         <>
         <section className="gallery">
 
-            {product && product.gallery && product.gallery.map((item) => 
+            {product && product.productGallery && product.productGallery.map((item) => 
             <ProductGalleryItem 
                 key={item.id}
                 index={item.index}

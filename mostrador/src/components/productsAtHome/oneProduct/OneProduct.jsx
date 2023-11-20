@@ -3,7 +3,7 @@ import "./OneProduct.scss";
 
 
 
-function OneProduct({ url, index, productImg, productImgAltText, productName, productType, designer, material, specifications}) {
+function OneProduct({ url, index, productImg, productImgAltText, productName, productType, designer, material, dimensions}) {
 
     return (
         <>
@@ -17,7 +17,7 @@ function OneProduct({ url, index, productImg, productImgAltText, productName, pr
 
                     <div className="one-product__back">
                         <p className="one-product__info"><span className="text-dec--underline"><span className="text-trans--uppercase">{productName}</span>, {productType}</span>. {designer}</p>
-                        <p className="one-product__meas">{material}. {specifications}</p>
+                        <p className="one-product__meas">{material}. {dimensions}</p>
                         <p className="one-product__price">Inquire</p>
                     </div>
 

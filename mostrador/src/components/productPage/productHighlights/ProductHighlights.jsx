@@ -1,18 +1,18 @@
 import "./ProductHighlights.scss"
 
-function ProductHighlights({ name, by, year, material, dimensions, nameSecondary }) {
+function ProductHighlights({ productName, designer, year, material, dimensions, nameSecondary }) {
 
     return (
         <>
         <section className="product-hl">
                 <div>
                     <p className="product-hl__title">Name</p>
-                    <h1 className="product-hl__text">{name}</h1>
+                    <h1 className="product-hl__text">{productName}</h1>
                 </div>
 
                 <div>
                     <p className="product-hl__title">By</p>
-                    <h2 className="product-hl__text">{by}</h2>
+                    <h2 className="product-hl__text">{designer}</h2>
                 </div>
 
                 <div>
