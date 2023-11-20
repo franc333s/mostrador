@@ -5,7 +5,7 @@ function ProductGallery({ product }) {
 
     return (
         <>
-        <section className="gallery">
+        <section className="product-gallery">
 
             {product && product.productGallery && product.productGallery.map((item) => 
             <ProductGalleryItem 

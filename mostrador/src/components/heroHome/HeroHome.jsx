@@ -8,7 +8,7 @@ function HeroHome() {
 
     return (
         <>
-        <section className="hero">
+        <section className="home-hero">
             <BgVideo />
             <Logo />
         </section>

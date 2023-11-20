@@ -6,10 +6,9 @@
     &__item {
 
         &__title {
-            font-size: 1.6rem;
-
+            font-size: $fs-product-page-fig-text;
             display: flex;
-            gap: .4rem;
+            gap: .6rem;
         }
 
         &__img {

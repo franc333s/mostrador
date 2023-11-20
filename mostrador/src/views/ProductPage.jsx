@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 import ProductDescription from "../components/productPage/productDescription/ProductDescription";
 import ProductGallery from "../components/productPage/productGallery/ProductGallery"
 import ProductHero from "../components/productPage/productHero/ProductHero"
-import ProductHighlights from "../components/productPage/productHighlights/ProductHighlights";
+import ProductIntro from "../components/productPage/productIntro/ProductIntro";
 
 import db from "../firebase/config";
 
@@ -47,7 +47,7 @@ function ProductPage() {
                 heroImgAltText={product.heroImgAltText}
             />
 
-            <ProductHighlights 
+            <ProductIntro 
                 productName={product.productName}
                 designer={product.designer}
                 year={product.year}

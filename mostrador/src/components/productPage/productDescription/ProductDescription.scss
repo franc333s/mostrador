@@ -2,15 +2,18 @@
 @import "../../../scss/mixins";
 
 .product-desc {
-    font-size: 2rem;
-    //canviar font-size
-
+    font-size: $fs-product-page-text;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: clamp(2.8rem, 3.17vw + 1.56rem, 4rem);;
+    grid-template-columns: 2fr .5fr;
+    gap: clamp(2.8rem, 3.17vw + 1.56rem, 4rem);
+    padding: 0 $vertical-padding;
+
+    @include mq($bp-medium) {
+        grid-template-columns: 3fr 1fr;
+    }
 
     &__title {
-        font-size: 1.6rem;
+        font-size: $fs-product-page-title;
         text-transform: uppercase;
     }
 

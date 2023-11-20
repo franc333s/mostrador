@@ -5,6 +5,7 @@
 
     &__img {
         width: 100%;
+        padding: 0 $vertical-padding--small;
 
         @include mq($bp-lowerlarge) {
             height: 90vh;

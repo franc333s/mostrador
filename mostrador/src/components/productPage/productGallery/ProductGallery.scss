@@ -1,17 +1,18 @@
 @import "../../../scss/sass-variables";
 @import "../../../scss/mixins";
 
-.gallery {
+.product-gallery {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 
-    padding-top: 4rem;
+    padding: clamp(3.9rem, 5.81vw + 1.63rem, 10rem) $vertical-padding--small 0;
 
     @include mq($bp-medium) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: .4rem;
+        row-gap: 8rem;
         align-items: end;
     }
 

@@ -20,13 +20,13 @@ $font-weight-regular: 400;
 $font-weight-bold: 700;
 
 
-// Font implementation
-
-
-
 // Font size implementations
 
-
+//Product page
+$fs-product-page-title: clamp(1.6rem, 0.19vw + 1.53rem, 1.8rem);
+$fs-product-page-text: clamp(1.6rem, 0.76vw + 1.3rem, 2.4rem);
+$fs-product-page-text--variation: clamp(9.4rem, 9.62vw + 5.65rem, 19.5rem);
+$fs-product-page-fig-text: clamp(1.6rem, 0.19vw + 1.53rem, 1.8rem);
 
 
 
@@ -43,8 +43,8 @@ $bp-xlarge: 120rem; // 1920px
 // Padding implementations
 
 // Vertical main padding
-$vertical-padding: clamp(1.6rem, 2.88vw + 0.48rem, 6rem);
-
+$vertical-padding: clamp(0.4rem, 0.38vw + 0.25rem, 0.8rem);
+$vertical-padding--small: .2rem;
 
 
 // Variables for @each / @for / etc
