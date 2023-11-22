@@ -4,43 +4,45 @@
 
 
 .one-product {
-    color: $color-black;
-    font-size: 1.8rem;
-    z-index: 2;
+    text-decoration: none;
 
-    position: relative;
-    padding-bottom: 4rem;
+    &__item {
+        color: $color-black;
+        font-size: 1.8rem;
+        padding-bottom: 4rem;
+        position: relative;
+        z-index: 2;
 
-
-    @include mq($bp-lowermedium) {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-    }
-
-    &__back {
-        z-index: -1;
-
-        @include mq($bp-medium) {
-            position: absolute;
-            padding-bottom: .8rem;
+        @include mq($bp-lowermedium) {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
         }
 
-    }
+        &__front {
+            transition: transform .2s ease-in-out;
+        }
+    
+        &__front:hover {
+    
+            @include mq($bp-medium) {
+                transform: translate(0, -10rem);
+            }
+        }
 
-    &__front {
-        transition: transform .2s ease-in-out;
-    }
-
-    &__front:hover {
-
-        @include mq($bp-medium) {
-            transform: translate(0, -10rem);
+        &__back {
+            z-index: -1;
+    
+            @include mq($bp-medium) {
+                position: absolute;
+                padding-bottom: .8rem;
+            }
         }
     }
 
-
-
+    &__id {
+        padding-left: .2rem;
+    }
 
     &__img {
         width: 100%;

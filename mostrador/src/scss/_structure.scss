@@ -1,0 +1,22 @@
+@import "./sass-variables";
+@import "./mixins";
+
+.product {
+
+    &-top {
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &-bottom {
+        position: absolute;
+        background-color: $color-bg-white;
+        margin-top: clamp(24rem, 66.66vw + 0rem, 77.66rem);
+
+        @include mq($bp-lowerlarge) {
+            margin-top: 90vh;
+        }
+
+    }
+}

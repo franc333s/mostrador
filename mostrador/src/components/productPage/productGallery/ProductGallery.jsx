@@ -10,7 +10,7 @@ function ProductGallery({ product }) {
             {product && product.productGallery && product.productGallery.map((item) => 
             <ProductGalleryItem 
                 key={item.id}
-                index={item.index}
+                figIndex={item.figIndex}
                 figText={item.figText}
                 figImg={item.figImg}
                 figImgAltText={item.figImgAltText}

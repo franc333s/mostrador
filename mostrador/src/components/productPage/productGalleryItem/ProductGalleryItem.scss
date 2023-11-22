@@ -1,7 +1,7 @@
 @import "../../../scss/sass-variables";
 @import "../../../scss/mixins";
 
-.gallery {
+.product-gallery {
 
     &__item {
 
@@ -9,6 +9,7 @@
             font-size: $fs-product-page-fig-text;
             display: flex;
             gap: .6rem;
+            padding-left: .2rem;
         }
 
         &__img {

@@ -1,0 +1,18 @@
+@import "../../scss/sass-variables";
+@import "../../scss/mixins";
+
+
+.topbar {
+    padding: 0 $vertical-padding;
+
+    &__title,
+    &__inner__item {
+        font-size: 2rem;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+
+}

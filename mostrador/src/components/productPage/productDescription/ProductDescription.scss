@@ -2,6 +2,8 @@
 @import "../../../scss/mixins";
 
 .product-desc {
+    //background-color: blue;
+
     font-size: $fs-product-page-text;
     display: grid;
     grid-template-columns: 2fr .5fr;

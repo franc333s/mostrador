@@ -2,11 +2,13 @@
 @import "../../../scss/mixins";
 
 .product-gallery {
+    background-color: white;
+   
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 
-    padding: clamp(3.9rem, 5.81vw + 1.63rem, 10rem) $vertical-padding--small 0;
+    padding: clamp(3.9rem, 5.81vw + 1.63rem, 10rem) 0 0;
 
     @include mq($bp-medium) {
         display: grid;

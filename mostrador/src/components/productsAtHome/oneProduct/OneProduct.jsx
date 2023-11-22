@@ -7,17 +7,17 @@ function OneProduct({ url, index, productImg, productImgAltText, productName, pr
 
     return (
         <>
-        <Link to={url}>
+        <Link to={url} className="one-product">
 
-            <article className="one-product">
-                    <div className="one-product__front">
+            <article className="one-product__item">
+                    <div className="one-product__item__front">
                         <p className="one-product__id">/ {index}</p>
                         <img className="one-product__img" src={productImg} alt={productImgAltText} />
                     </div>
 
-                    <div className="one-product__back">
+                    <div className="one-product__item__back">
                         <p className="one-product__info"><span className="text-dec--underline"><span className="text-trans--uppercase">{productName}</span>, {productType}</span>. {designer}</p>
-                        <p className="one-product__meas">{material}. {dimensions}</p>
+                        <p className="one-product__mat-dim">{material}. {dimensions}</p>
                         <p className="one-product__price">Inquire</p>
                     </div>
 

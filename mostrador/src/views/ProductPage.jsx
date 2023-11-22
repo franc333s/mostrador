@@ -5,6 +5,7 @@ import ProductDescription from "../components/productPage/productDescription/Pro
 import ProductGallery from "../components/productPage/productGallery/ProductGallery"
 import ProductHero from "../components/productPage/productHero/ProductHero"
 import ProductIntro from "../components/productPage/productIntro/ProductIntro";
+import Topbar from "../components/topbar/Topbar";
 
 import db from "../firebase/config";
 
@@ -38,32 +39,39 @@ function ProductPage() {
     }
 
     return (
-
         <>
-        <main>
+            <Topbar />
+            <main>
+                <div className="product product-top">
+                    
+                    <ProductHero 
+                        heroImg={product.heroImg}
+                        heroImgAltText={product.heroImgAltText}
+                    />
 
-            <ProductHero 
-                heroImg={product.heroImg}
-                heroImgAltText={product.heroImgAltText}
-            />
+                </div>
 
-            <ProductIntro 
-                productName={product.productName}
-                designer={product.designer}
-                year={product.year}
-                material={product.material}
-                dimensions={product.dimensions}
-                nameSecondary={product.nameSecondary}
-            />
 
-            <ProductDescription 
-                productDescription={product.productDescription}
-                editionType={product.editionType}
-            />
+                <div className="product product-bottom">
 
-            <ProductGallery product={product} />
+                    <ProductIntro 
+                        productName={product.productName}
+                        designer={product.designer}
+                        year={product.year}
+                        material={product.material}
+                        dimensions={product.dimensions}
+                        nameSecondary={product.nameSecondary}
+                    />
 
-        </main>
+                    <ProductDescription 
+                        productDescription={product.productDescription}
+                        editionType={product.editionType}
+                    />
+
+                    <ProductGallery product={product} />
+
+                </div>
+            </main>
         </>
     )
 }
