@@ -3,16 +3,25 @@
 
 
 .topbar {
-    padding: 0 $vertical-padding;
+    color: $color-white;
+    mix-blend-mode: difference;
+    padding: 1.2rem $vertical-padding 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+
+    &__title > a {
+        text-decoration: none;
+    }
 
     &__title,
     &__inner__item {
-        font-size: 2rem;
+        font-size: clamp(1.6rem, 0.38vw + 1.45rem, 2rem);;
     }
 
     &__inner {
         display: flex;
     }
-
-
 }

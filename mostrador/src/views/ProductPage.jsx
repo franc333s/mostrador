@@ -41,8 +41,9 @@ function ProductPage() {
     return (
         <>
             <Topbar />
-            <main>
-                <div className="product product-top">
+
+            <main className="product">
+                <div className="product__top">
                     
                     <ProductHero 
                         heroImg={product.heroImg}
@@ -52,7 +53,7 @@ function ProductPage() {
                 </div>
 
 
-                <div className="product product-bottom">
+                <div className="product__bottom">
 
                     <ProductIntro 
                         productName={product.productName}

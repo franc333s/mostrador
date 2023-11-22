@@ -2,20 +2,25 @@
 @import "./mixins";
 
 .product {
+    margin-top: 8rem;
 
-    &-top {
+    @include mq($bp-medium) {
+        margin-top: 0;
+    }
+
+    &__top {
         position: fixed;
         width: 100%;
         z-index: -1;
     }
 
-    &-bottom {
+    &__bottom {
         position: absolute;
         background-color: $color-bg-white;
         margin-top: clamp(24rem, 66.66vw + 0rem, 77.66rem);
 
         @include mq($bp-lowerlarge) {
-            margin-top: 90vh;
+            margin-top: 96vh;
         }
 
     }
