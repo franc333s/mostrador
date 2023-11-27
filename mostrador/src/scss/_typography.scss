@@ -2,6 +2,49 @@
 @import "./mixins";
 
 h1,
-.h1 {
-    
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    font-weight: normal;
 }
+
+
+.about {
+
+    &__title {
+        font-size: $fs-about-page-title;
+        text-transform: uppercase;
+
+        &--variation {
+            font-size: $fs-about-page-title;
+            text-transform: capitalize;
+            padding: clamp(4rem, 4.67vw + 2.32rem, 8rem) 0 0 $vertical-padding;
+
+            @include mq($bp-medium) {
+                padding-left: 0;
+            }
+
+
+            @include mq($bp-lowerlarge) {
+                padding-top: 0;
+            }
+        }
+    }
+
+    &__text {
+        font-size: clamp(3rem, 0.56vw + 2.8rem, 3.6rem);
+        padding-bottom: clamp(4rem, 2.34vw + 3.16rem, 6rem);
+
+        &--variation {
+            font-size: clamp(2rem, 0.93vw + 1.67rem, 3rem);
+        }
+
+        & > a {
+            text-decoration: none;
+        }
+    }
+}
+
+
