@@ -32,7 +32,7 @@ function ProductsFeed() {
 
     return (
         <> 
-        <section className="products">
+        <main className="products">
             {products.map((product) => 
             <OneProduct 
                 key={product.id}
@@ -47,7 +47,7 @@ function ProductsFeed() {
                 dimensions={product.dimensions}
             />
             )}  
-        </section>
+        </main>
         </>
     )
 }

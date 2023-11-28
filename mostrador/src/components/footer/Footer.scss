@@ -1,0 +1,58 @@
+@import "../../scss/sass-variables";
+@import "../../scss/mixins";
+
+
+
+.footer {
+    border-top: 1px black solid;
+    margin: 6rem $vertical-padding 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+
+
+    @include mq($bp-medium) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mq($bp-lowerlarge) {
+        grid-template-columns: 1fr 1fr 3fr 1fr .4fr .4fr;
+    }
+
+
+    &__inner {
+        display: flex;
+        gap: .2rem;
+
+        &--jc--center {
+
+            @include mq($bp-lowerlarge) {
+                justify-content: center;
+            }
+        }
+
+        &--jc--center {
+
+            @include mq($bp-lowerlarge) {
+                justify-content: center;
+            }
+        }
+    }
+
+    &__index {
+        font-size: 1rem;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        line-height: 116%;
+    }
+
+}
+
+
+
+

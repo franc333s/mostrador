@@ -2,6 +2,7 @@ import ProductsFeed from "../components/productsAtHome/productsFeed/ProductsFeed
 import HeroHome from "../components/heroHome/HeroHome";
 import ButtonPrimary from "../components/buttons/ButtonPrimary";
 import Topbar from "../components/topbar/Topbar";
+import Footer from "../components/footer/Footer";
 
 
 
@@ -12,7 +13,7 @@ function Home() {
             <HeroHome />
             <Topbar />
             <ProductsFeed />
-            <ButtonPrimary className="btn" text="hellow"/>
+            <Footer />
         </>
     );
 }

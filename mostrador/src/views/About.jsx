@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Footer from "../components/footer/Footer"
 import Topbar from "../components/topbar/Topbar"
 
 
@@ -34,7 +35,7 @@ function About() {
 
             </main>
 
-            
+            <Footer />
 
         </>
     )

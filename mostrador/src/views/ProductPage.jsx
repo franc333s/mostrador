@@ -1,6 +1,7 @@
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
+import Footer from "../components/footer/Footer";
 import ProductDescription from "../components/productPage/productDescription/ProductDescription";
 import ProductGallery from "../components/productPage/productGallery/ProductGallery"
 import ProductHero from "../components/productPage/productHero/ProductHero"
@@ -43,6 +44,7 @@ function ProductPage() {
             <Topbar />
 
             <main className="product">
+
                 <div className="product__top">
                     
                     <ProductHero 
@@ -71,8 +73,16 @@ function ProductPage() {
 
                     <ProductGallery product={product} />
 
+                    
+
                 </div>
+
             </main>
+
+
+            <Footer />
+
+            
         </>
     )
 }
