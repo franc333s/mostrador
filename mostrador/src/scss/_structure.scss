@@ -29,11 +29,13 @@
 
 .about {
     padding-top: clamp(10rem, 7.41vw + 7.33rem, 18rem);
+   
 
     @include mq($bp-lowerlarge) {
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 3.5fr 2fr;
         gap: 10rem;
+        min-height: 90vh;
     }
 
     &__sect {
@@ -54,6 +56,4 @@
             padding: 0 $vertical-padding;
         }
     }
-
-
 }

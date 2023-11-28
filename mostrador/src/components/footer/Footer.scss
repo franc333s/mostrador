@@ -12,6 +12,8 @@
     align-items: center;
     gap: .4rem;
 
+    flex-grow: 1;
+
 
     @include mq($bp-medium) {
         display: grid;
