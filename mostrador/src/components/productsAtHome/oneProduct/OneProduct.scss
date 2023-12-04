@@ -26,7 +26,7 @@
         &__front:hover {
     
             @include mq($bp-medium) {
-                transform: translate(0, -10rem);
+                transform: translate(0, -7.4rem);
             }
         }
 

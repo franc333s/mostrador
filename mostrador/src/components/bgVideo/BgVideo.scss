@@ -8,7 +8,8 @@
     z-index: -1;
 
     &--mob {
-        height: 90vh;
+        width: 100%;
+        object-fit: cover;
     }
     &--des {
         width: 100%;

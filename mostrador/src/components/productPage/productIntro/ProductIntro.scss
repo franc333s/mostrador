@@ -3,7 +3,8 @@
 
 .product-intro {
     display: grid;
-    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-columns: 3fr 1fr 2fr;
+    //revisar medidas
     row-gap: 2.4rem;
     padding: clamp(0.4rem, 0.76vw + 0.1rem, 1.2rem) $vertical-padding clamp(4rem, -1.14vw + 4.45rem, 2.8rem);
 
@@ -12,21 +13,24 @@
     }
 
     @include mq($bp-lowerlarge) {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
     }
 
     &__title {
         font-size: $fs-product-page-title;
         text-transform: uppercase;
+        font-size: 1.2rem;
     }
 
     &__text {
         font-size: $fs-product-page-text;
         white-space: nowrap;
-
+        font-size: 2rem;
+        line-height: 100%;
 
         &--variation {
             font-family: $font-secondary;
+            font-size: $fs-product-page-text--variation;
             font-size: $fs-product-page-text--variation;
             text-transform: uppercase;
         }

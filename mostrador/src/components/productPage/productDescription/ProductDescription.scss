@@ -6,17 +6,28 @@
 
     font-size: $fs-product-page-text;
     display: grid;
-    grid-template-columns: 2fr .5fr;
-    gap: clamp(2.8rem, 3.17vw + 1.56rem, 4rem);
+    grid-template-columns: 2fr 1fr;
+    gap: clamp(2.8rem, 10.45vw + -0.96rem, 12rem);
     padding: 0 $vertical-padding;
 
+
+
     @include mq($bp-medium) {
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1.9fr;
     }
 
     &__title {
         font-size: $fs-product-page-title;
+        font-size:  1.2rem;
         text-transform: uppercase;
+    }
+
+    &__text {
+        font-size:  clamp(2rem, 0.93vw + 1.67rem, 3rem);
+        font-size:  2rem;
+        line-height: 100%;
+        // revisar line height en about
+        
     }
 
     &__aside {
@@ -27,6 +38,11 @@
 
     &__cta {
         text-transform: uppercase;
+        font-size:  clamp(2rem, 0.93vw + 1.67rem, 3rem);
+        font-size: 2rem;
+        line-height: 100%;
+
+
 
         & > a {
             text-decoration: none;

@@ -74,13 +74,13 @@ function ProductPage() {
                     <ProductGallery product={product} />
 
                     
-
+                    <Footer />
                 </div>
 
             </main>
 
 
-            <Footer />
+
 
             
         </>

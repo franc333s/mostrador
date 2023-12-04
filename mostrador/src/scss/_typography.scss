@@ -14,11 +14,11 @@ h3,
 .about {
 
     &__title {
-        font-size: $fs-about-page-title;
+        font-size: 1.2rem;
         text-transform: uppercase;
 
         &--variation {
-            font-size: $fs-about-page-title;
+            font-size: 1.4rem;
             text-transform: capitalize;
             padding: clamp(4rem, 4.67vw + 2.32rem, 8rem) 0 0 $vertical-padding;
 
@@ -36,9 +36,12 @@ h3,
     &__text {
         font-size: clamp(3rem, 0.56vw + 2.8rem, 3.6rem);
         padding-bottom: clamp(4rem, 2.34vw + 3.16rem, 6rem);
+        line-height: 100%;
 
         &--variation {
             font-size: clamp(2rem, 0.93vw + 1.67rem, 3rem);
+            line-height: 110%;
+
         }
 
         & > a {
