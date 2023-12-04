@@ -25,12 +25,10 @@ function BgVideo() {
 
     return (
         <>
-
-        <div className="bg-video">
-            <video className={`${screenRes ? 'bg-video--mob' : 'bg-video--des'}`} autoPlay loop muted playsinline="true" disablePictureInPicture="true">
-                <source src={screenRes ? mostradorVert : mostradorHori} type="video/mp4" />
-            </video>
-        </div>
+        
+        <video className={`bg-video ${screenRes ? 'bg-video--mob' : 'bg-video--des'}`} autoPlay loop muted playsInline={true} disablePictureInPicture={true}>
+            <source src={screenRes ? mostradorVert : mostradorHori} type="video/mp4" />
+        </video>
 
         </>
     )
