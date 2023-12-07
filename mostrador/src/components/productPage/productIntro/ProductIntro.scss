@@ -3,17 +3,18 @@
 
 .product-intro {
     display: grid;
-    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-columns: 2.5fr 2fr 1fr;
     //revisar medidas
     row-gap: 2.4rem;
-    padding: clamp(0.4rem, 0.76vw + 0.1rem, 1.2rem) $vertical-padding clamp(4rem, -1.14vw + 4.45rem, 2.8rem);
+    padding: clamp(0.4rem, 0.76vw + 0.1rem, 1.2rem) $vertical-padding 0;
+
 
     @include mq($bp-medium) {
         grid-template-columns: repeat(4, 1fr);
     }
 
     @include mq($bp-lowerlarge) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+        grid-template-columns: .35fr .35fr .35fr .35fr 1.5fr;
     }
 
     &__title {
@@ -31,15 +32,21 @@
         &--variation {
             font-family: $font-secondary;
             font-size: $fs-product-page-text--variation;
-            font-size: $fs-product-page-text--variation;
             text-transform: uppercase;
+
+            @include mq($bp-lowerlarge) {
+                justify-self: end;
+            }
         }
     }
 
     &__mat-dim {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
 
 }
+
+
+

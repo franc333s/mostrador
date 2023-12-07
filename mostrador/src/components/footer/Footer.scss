@@ -5,7 +5,6 @@
 
 .footer {
     background-color: $color-bg-white;
-    // width: 100%;
     border-top: 1px $color-bg-black solid;
     padding: 0 $vertical-padding 1.8rem;
 
@@ -18,7 +17,7 @@
 
     @include mq($bp-medium) {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1.2fr;
         padding-bottom: 1.2rem;
     }
 

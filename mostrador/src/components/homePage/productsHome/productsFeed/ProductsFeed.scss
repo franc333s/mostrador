@@ -1,0 +1,35 @@
+@import "../../../../scss/sass-variables";
+@import "../../../../scss/mixins";
+
+
+.products {
+    color: $color-black;
+    background-color: $color-bg-white;
+    padding-top: clamp(4rem, 10.46vw + -0.08rem, 20rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 1;
+
+
+    @include mq($bp-lowermedium) {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 8rem;
+        column-gap: 0.2rem;
+        align-items: end;
+
+    }
+
+    @include mq($bp-medium) {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    @include mq($bp-lowerlarge) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &--padding-top {
+        padding-top: clamp(9rem, 12.82vw + 4.38rem, 29rem);
+    }
+}
+

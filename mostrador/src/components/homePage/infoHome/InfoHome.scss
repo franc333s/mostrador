@@ -1,0 +1,36 @@
+@import "../../../scss/sass-variables";
+@import "../../../scss/mixins";
+
+
+.info {
+    background-color: $color-bg-white;
+
+    padding: 0 1.2rem;
+
+    &__title,
+    &__inner__title,
+    &__inner__text {
+        font-size: 2rem;
+    }
+    
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__inner__title,
+    &__inner__text {
+        display: inline;
+    }
+}
+
+
+
+
+.info--fixed {
+    background-color: transparent;
+    position: fixed;
+    top: 1.9rem;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}

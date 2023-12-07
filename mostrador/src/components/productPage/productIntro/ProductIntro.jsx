@@ -32,9 +32,8 @@ function ProductIntro({ productName, designer, year, material, dimensions, nameS
                     </div>
                 </div>
 
-                <div>
-                    <p className="product-intro__text--variation">{nameSecondary}</p>
-                </div>
+                <p className="product-intro__text--variation">{nameSecondary}</p>
+
             </section>
         </>
     )

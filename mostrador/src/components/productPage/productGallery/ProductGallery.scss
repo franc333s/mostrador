@@ -3,18 +3,15 @@
 
 .product-gallery {
     background-color: white;
-   
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
-
-    padding: clamp(3.9rem, 5.81vw + 1.63rem, 10rem) 0 0;
+    padding-top: clamp(4rem, 3.92vw + 2.47rem, 10rem);
 
     @include mq($bp-medium) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: .4rem;
         row-gap: 8rem;
+        column-gap: 0.2rem;
         align-items: end;
     }
 

@@ -1,0 +1,60 @@
+@import "../../../../scss/sass-variables";
+@import "../../../../scss/mixins";
+@import "../../../../scss/utilities";
+
+
+
+.one-product {
+    text-decoration: none;
+
+    &__item {
+        color: $color-black;
+        font-size: 1.8rem;
+        padding-bottom: 4rem;
+        position: relative;
+        z-index: 2;
+
+        @include mq($bp-lowermedium) {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        &__front {
+            transition: transform .2s ease-in-out;
+        }
+    
+        &__front:hover {
+    
+            @include mq($bp-medium) {
+                transform: translate(0, -5.2rem);
+            }
+        }
+
+        &__back {
+            z-index: -1;
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+
+    
+            @include mq($bp-medium) {
+                position: absolute;
+                padding-bottom: .8rem;
+            }
+        }
+    }
+
+    &__id {
+        font-size: 1.4rem;
+        padding-left: .2rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__info {
+        font-size: 1.8rem;
+    }
+}

@@ -3,7 +3,9 @@ import "./ProductGalleryItem.scss"
 function ProductGalleryItem({ figIndex, figText, figImg, figImgAltText }) {
 
     return (
-        <><div className="product-gallery__item">
+        <>
+        
+        <div className="product-gallery__item">
             <div className="product-gallery__item__title">
                 <p>{figIndex}</p>
                 <p>—</p>

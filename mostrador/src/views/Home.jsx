@@ -1,6 +1,5 @@
-import ProductsFeed from "../components/productsAtHome/productsFeed/ProductsFeed";
-import HeroHome from "../components/heroHome/HeroHome";
-import ButtonPrimary from "../components/buttons/ButtonPrimary";
+import ProductsFeed from "../components/homePage/productsHome/productsFeed/ProductsFeed";
+import HeroHome from "../components/homePage/heroHome/HeroHome";
 import Topbar from "../components/topbar/Topbar";
 import Footer from "../components/footer/Footer";
 

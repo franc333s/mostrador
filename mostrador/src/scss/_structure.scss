@@ -29,7 +29,6 @@
 
 .about {
     padding-top: clamp(10rem, 7.41vw + 7.33rem, 18rem);
-   
 
     @include mq($bp-lowerlarge) {
         display: grid;
@@ -47,13 +46,6 @@
                 display: flex;
                 gap: 10rem;
             }
-        }
-    } 
-
-    &__div {
-
-        @include mq($bp-medium) {
-            padding: 0 $vertical-padding;
         }
     }
 }

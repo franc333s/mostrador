@@ -2,18 +2,26 @@
 @import "../../../scss/mixins";
 
 .product-desc {
-    //background-color: blue;
-
     font-size: $fs-product-page-text;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: clamp(2.8rem, 10.45vw + -0.96rem, 12rem);
     padding: 0 $vertical-padding;
 
-
+    @include mq($bp-lowermedium) {
+        grid-template-columns: 2fr .5fr;
+    }
 
     @include mq($bp-medium) {
-        grid-template-columns: 3fr 1.9fr;
+        grid-template-columns: 3fr 1.1fr;
+    }
+
+    @include mq($bp-medium) {
+        grid-template-columns: 3fr 1.1fr;
+    }
+
+    @include mq($bp-lowerlarge) {
+        grid-template-columns: 2fr 1.13fr;
     }
 
     &__title {
