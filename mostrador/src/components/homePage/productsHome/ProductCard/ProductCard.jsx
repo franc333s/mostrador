@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./OneProduct.scss";
+import "./ProductCard.scss";
 
 
 
-function OneProduct({ url, index, productImg, productImgAltText, productName, productType, designer, material, dimensions}) {
+function ProductCard({ url, index, productImg, productImgAltText, productName, productType, designer, material, dimensions}) {
 
     return (
         <>
@@ -29,4 +29,4 @@ function OneProduct({ url, index, productImg, productImgAltText, productName, pr
     )
 }
 
-export default OneProduct;
+export default ProductCard;

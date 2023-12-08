@@ -16,20 +16,14 @@
         row-gap: 8rem;
         column-gap: 0.2rem;
         align-items: end;
-
     }
 
     @include mq($bp-medium) {
         grid-template-columns: repeat(3, 1fr);
-        
     }
 
     @include mq($bp-lowerlarge) {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    &--padding-top {
-        padding-top: clamp(9rem, 12.82vw + 4.38rem, 29rem);
     }
 }
 
