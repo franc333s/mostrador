@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import db from "../../../../firebase/config";
-import OneProduct from "../oneProduct/OneProduct";
+import ProductCard from "../ProductCard/ProductCard";
 import "./ProductsFeed.scss";
-
-
 
 
 function ProductsFeed() {
 
     const [products, setProducts] = useState([]);
-    const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
         const obtainProducts = async () => {
@@ -28,25 +25,7 @@ function ProductsFeed() {
 
         obtainProducts();
 
-        const handleScroll = () => {
-            setScrollY(window.scrollY);
-          };
-      
-          window.addEventListener("scroll", handleScroll);
-      
-          return () => {
-            window.removeEventListener("scroll", handleScroll);
-          };
         }, []);
-      
-        useEffect(() => {
-          const mainElement = document.querySelector(".products");
-          if (scrollY >= 950 && mainElement) {
-            mainElement.classList.add("products--padding-top");
-          } else if (mainElement) {
-            mainElement.classList.remove("products--padding-top");
-          }
-        }, [scrollY]);
       
 
 
@@ -54,7 +33,7 @@ function ProductsFeed() {
         <> 
         <main className="products">
             {products.map((product) => 
-            <OneProduct 
+            <ProductCard 
                 key={product.id}
                 url={product.url}
                 index={product.index}
