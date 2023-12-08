@@ -18,12 +18,12 @@
     }
 
     &__title > a {
-        font-size:  $fs-product-topbar;
+        font-size:  $fs-topbar;
         text-decoration: none;
     }
 
     &__inner__item {
-        font-size:  $fs-product-topbar;
+        font-size:  $fs-topbar;
 
         &:not(:last-child)::after {
             content: ",";

@@ -26,8 +26,6 @@ function ProductsFeed() {
         obtainProducts();
 
         }, []);
-      
-
 
     return (
         <> 
@@ -45,7 +43,7 @@ function ProductsFeed() {
                 material={product.material}
                 dimensions={product.dimensions}
             />
-            )}  
+            )}
         </main>
         </>
     )
