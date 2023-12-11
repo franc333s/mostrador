@@ -5,5 +5,10 @@
 
 .home-hero {
     z-index: -2;
-    min-height: 100vh;
+    min-height: 94vh;
+
+    @include mq($bp-lowermedium) {
+        min-height: 100vh;
+    }
+    
 }

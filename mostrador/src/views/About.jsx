@@ -12,8 +12,8 @@ function About() {
             <section className="about__sect">
                 <div className="about__sect__flex">
                     <div>
-                        <h1 className="about__title">Email</h1>
-                        <p className="about__text"><Link to="mailto:contact@mostradorgallery.com" target="_blank">contact@mostradorgallery.com</Link></p>
+                        <p className="about__title">Email</p>
+                        <h1 className="about__text"><Link to="mailto:contact@mostradorgallery.com" target="_blank">contact@mostradorgallery.com</Link></h1>
                     </div>
                     <div>
                         <p className="about__title">Based</p>

@@ -17,10 +17,14 @@
         }
     }
 
-    &__title > a {
-        font-size:  $fs-topbar;
-        text-decoration: none;
+    &__title {
+        font-size: $fs-topbar;
+
+        & > a {
+            text-decoration: none;
+        }
     }
+
 
     &__inner__item {
         font-size:  $fs-topbar;
@@ -34,11 +38,6 @@
     &__inner {
         display: flex;
     }
-
-
-
-
-
 
 
     // Topbar home
@@ -58,6 +57,4 @@
         width: 100%;
         z-index: 3;
     }
-
-
 }

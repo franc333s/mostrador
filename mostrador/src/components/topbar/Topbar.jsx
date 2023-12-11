@@ -35,7 +35,7 @@ function Topbar () {
         return (
             <>
             <nav className={`topbar--home ${addStaticClass ? 'topbar--fixed' : ''}`}>
-                <p className="topbar__title text-trans--uppercase"><Link to="/">Mostador / Gallery</Link></p>
+                <h1 className="topbar__title text-trans--uppercase"><Link to="/">Mostador / Gallery</Link></h1>
                 <ul className="topbar__inner">
                     <li className="topbar__inner__item text-trans--uppercase">→ <Link to="/">Works</Link></li>
     

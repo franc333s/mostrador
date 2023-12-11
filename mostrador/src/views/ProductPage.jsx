@@ -10,12 +10,30 @@ import Topbar from "../components/topbar/Topbar";
 
 import db from "../firebase/config";
 
+import Mostrador20 from "../components/homePage/mostrador/mostrador-variations/Mostrador20";
+import Mostrador40 from "../components/homePage/mostrador/mostrador-variations/Mostrador40";
+import Mostrador60 from "../components/homePage/mostrador/mostrador-variations/Mostrador60";
+import Mostrador80 from "../components/homePage/mostrador/mostrador-variations/Mostrador80";
+import Mostrador100 from "../components/homePage/mostrador/mostrador-variations/Mostrador100";
+import Mostrador120 from "../components/homePage/mostrador/mostrador-variations/Mostrador120";
+import Mostrador140 from "../components/homePage/mostrador/mostrador-variations/Mostrador140";
+import Mostrador160 from "../components/homePage/mostrador/mostrador-variations/Mostrador160";
+import Mostrador180 from "../components/homePage/mostrador/mostrador-variations/Mostrador180";
+import Mostrador200 from "../components/homePage/mostrador/mostrador-variations/Mostrador200";
+import Mostrador220 from "../components/homePage/mostrador/mostrador-variations/Mostrador220";
+import Mostrador240 from "../components/homePage/mostrador/mostrador-variations/Mostrador240";
 
 function ProductPage() {
 
     const { slug } = useParams();
 
-    const [product, setProduct] = useState(null);
+    const [ product, setProduct ] = useState(null);
+
+   //
+    const [ isLoading, setIsLoading ] = useState(true);
+    const [ svgIndex, setSvgIndex ] = useState(0);
+    const svgs = [ Mostrador20, Mostrador40, Mostrador60, Mostrador80, Mostrador100, Mostrador120, Mostrador140, Mostrador160, Mostrador180, Mostrador200, Mostrador220, Mostrador240 ];
+   //
 
     useEffect(() => {
         const obtainProduct = async () => {
@@ -35,8 +53,34 @@ function ProductPage() {
         obtainProduct();
     }, [slug]);
 
-    if (!product) {
-        return <div>Loading...</div>;
+
+
+    useEffect(() => {
+        const loadSVGs = () => {
+            const interval = setInterval(() => {
+                setSvgIndex((prevIndex) => {
+                    if (prevIndex < svgs.length - 1) {
+                        return prevIndex + 1;
+                    } else {
+                        clearInterval(interval);
+                        setIsLoading(false);
+                        return prevIndex;
+                    }
+                });
+            }, 400); // Set time to load
+    };
+
+        loadSVGs();
+    },);
+
+    if (!product || isLoading) {
+        return (
+            <div className="preloader">
+                {svgs.slice(0, svgIndex + 1).map((SVGComponent, index) => (
+                    <SVGComponent key={index} />
+                ))}
+            </div>
+        );
     }
 
     return (

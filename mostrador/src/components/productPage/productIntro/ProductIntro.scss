@@ -33,7 +33,7 @@
             font-family: $font-secondary;
             font-size: $fs-product-page-text--variation;
             text-transform: uppercase;
-
+            
             @include mq($bp-lowerlarge) {
                 justify-self: end;
             }

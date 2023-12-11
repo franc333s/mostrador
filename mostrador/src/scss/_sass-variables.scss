@@ -19,10 +19,39 @@ $font-weight-regular: 400;
 $font-weight-bold: 700;
 
 
-// Font size implementations
+// Font size
+$fs-header-large: clamp(3rem, 0.56vw + 2.8rem, 3.6rem);
+$fs-header-uppermedium: clamp(2rem, 0.93vw + 1.67rem, 3rem);
+$fs-header-medium: 2rem;
+$fs-header-small: 1.8rem;
+
+
+$fs-p-large: clamp(9rem, 7.41vw + 6.33rem, 17rem);
+$fs-p-uppermedium: 2rem;
+$fs-p-medium: 1.8rem;
+$fs-p-lowermedium: 1.4rem;
+$fs-p-small: 1.2rem;
+
+// Topbar
+$fs-topbar: 1.8rem;
+//Footer
+$fs-footer: 1.4rem;
+$fs-footer--small: 1rem;
+
+//Headers implementation 
+$fs-header1: $fs-header-large; // 3-3.6
+$fs-header2: $fs-header-medium; // 2
+$fs-header3: $fs-header-small; // 1.8
+
+//P implementation 
+$fs-text-aux: $fs-p-large; // 9-17
+$fs-labels: $fs-p-small; // 1.2
+$fs-index: $fs-p-lowermedium; // 1.4
+
+
 
 //Product page
-$fs-topbar: 1.8rem;
+
 $fs-product-page-title: clamp(1.6rem, 0.19vw + 1.53rem, 1.8rem);
 $fs-product-page-text: clamp(1.6rem, 0.76vw + 1.3rem, 2.4rem);
 $fs-product-page-text--variation: clamp(9rem, 7.41vw + 6.33rem, 17rem);
