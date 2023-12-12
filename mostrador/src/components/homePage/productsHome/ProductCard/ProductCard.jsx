@@ -3,7 +3,7 @@ import "./ProductCard.scss";
 
 
 
-function ProductCard({ url, index, productImg, productImgAltText, productName, productType, designer, material, dimensions}) {
+function ProductCard({ url, index, productImg, productImgAltText, productName, productType, designer }) {
 
     return (
         <>

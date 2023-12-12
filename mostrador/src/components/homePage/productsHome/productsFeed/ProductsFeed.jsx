@@ -40,8 +40,6 @@ function ProductsFeed() {
                 productImgAltText={product.productImgAltText}
                 productType={product.productType}
                 designer={product.designer}
-                material={product.material}
-                dimensions={product.dimensions}
             />
             )}
         </main>
