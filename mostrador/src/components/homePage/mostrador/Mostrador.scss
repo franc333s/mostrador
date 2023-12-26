@@ -1,19 +1,13 @@
 @import "../../../scss/sass-variables";
 @import "../../../scss/mixins";
 
-
-
 .mostrador {
     fill: $color-white;
     width: 100%;
     padding: 1.2rem;
     position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 0;
-
-    &--static {
-        position: absolute;
-        top: 60rem;
-    }
 }

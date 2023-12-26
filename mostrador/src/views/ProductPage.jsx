@@ -103,6 +103,7 @@ function ProductPage() {
 
                     <ProductIntro 
                         productName={product.productName}
+                        productType={product.productType}
                         designer={product.designer}
                         year={product.year}
                         material={product.material}

@@ -23,12 +23,18 @@ const Mostrador = () => {
     const [ scrollY, setScrollY ] = useState(0);
     const [ addStaticClass, setAddStaticClass ] = useState(false);
 
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isMobile = /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(userAgent);
+
+    let scrollSpeed = isMobile ? 1 : 0.66;
+
     useEffect(() => {
 
         const handleScroll = () => {
-            setScrollY(window.scrollY);
+            const currentScrollY = window.scrollY;
+            setScrollY(currentScrollY);
 
-            if (window.scrollY > 600) {
+            if (currentScrollY > (window.innerHeight * 0.69 * scrollSpeed)) {
                 setAddStaticClass(true);
             } else {
                 setAddStaticClass(false);
@@ -40,45 +46,42 @@ const Mostrador = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    });
 
-    let mostradorContent;
+    const scrollPositions = [
+        { limit: 6, component: <Mostrador20 /> },
+        { limit: 12, component: <Mostrador40 /> },
+        { limit: 18, component: <Mostrador60 /> },
+        { limit: 24, component: <Mostrador80 /> },
+        { limit: 30, component: <Mostrador100 /> },
+        { limit: 36, component: <Mostrador120 /> },
+        { limit: 42, component: <Mostrador140 /> },
+        { limit: 48, component: <Mostrador160 /> },
+        { limit: 54, component: <Mostrador180 /> },
+        { limit: 60, component: <Mostrador200 /> },
+        { limit: 66, component: <Mostrador220 /> },
+        { limit: 72, component: <Mostrador240 /> },
+        { limit: 78, component: <Mostrador260 /> },
+        { limit: 84, component: <Mostrador280 /> },
+        { limit: Infinity, component: <Mostrador300 /> },
+    ];
 
-        if (scrollY < 40) {
-            mostradorContent = <Mostrador20 />;
-        } else if (scrollY < 80) {
-            mostradorContent = <Mostrador40 />;
-        } else if (scrollY < 120) {
-            mostradorContent = <Mostrador60 />;
-        } else if (scrollY < 160) {
-            mostradorContent = <Mostrador80 />;
-        } else if (scrollY < 200) {
-            mostradorContent = <Mostrador100 />;
-        } else if (scrollY < 240) {
-            mostradorContent = <Mostrador120 />;
-        } else if (scrollY < 280) {
-            mostradorContent = <Mostrador140 />;
-        } else if (scrollY < 320) {
-            mostradorContent = <Mostrador160 />;
-        } else if (scrollY < 360) {
-            mostradorContent = <Mostrador180 />;
-        } else if (scrollY < 400) {
-            mostradorContent = <Mostrador200 />;
-        } else if (scrollY < 440) {
-            mostradorContent = <Mostrador220 />;
-        } else if (scrollY < 480) {
-            mostradorContent = <Mostrador240 />;
-        } else if (scrollY < 520) {
-            mostradorContent = <Mostrador260 />;
-        } else if (scrollY < 560) {
-            mostradorContent = <Mostrador280 />;
-        } else {
-            mostradorContent = <Mostrador300 />;
+    const getCurrentMostradorContent = () => {
+        for (const { limit, component } of scrollPositions) {
+            if (scrollY < (window.innerHeight * (limit / 100) * scrollSpeed)) {
+                return component;
+            }
         }
+
+        return scrollPositions[scrollPositions.length -1].component;
+    };
+
+    const mostradorContent = getCurrentMostradorContent();
+
     
     return (
             <>
-                <div className={`mostrador ${addStaticClass ? "mostrador--static" : ""}`}>
+                <div className="mostrador">
 
                     {mostradorContent}
                 

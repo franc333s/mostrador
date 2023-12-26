@@ -7,8 +7,9 @@
     z-index: -2;
     min-height: 94vh;
 
+    position: relative;
+
     @include mq($bp-lowermedium) {
         min-height: 100vh;
     }
-    
 }

@@ -1,13 +1,13 @@
 import "./ProductIntro.scss"
 
-function ProductIntro({ productName, designer, year, material, dimensions, nameSecondary }) {
+function ProductIntro({ productName, productType, designer, year, material, dimensions, nameSecondary }) {
 
     return (
         <>
         <section className="product-intro">
                 <div>
                     <p className="product-intro__title">Name</p>
-                    <h1 className="product-intro__text">{productName}</h1>
+                    <h1 className="product-intro__text"><span className="text-trans--uppercase">{productName}</span>, {productType}</h1>
                 </div>
 
                 <div>

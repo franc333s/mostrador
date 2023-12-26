@@ -12,13 +12,10 @@
         grid-template-columns: 2fr .5fr;
     }
 
-    @include mq($bp-medium) {
-        grid-template-columns: 3fr 1.1fr;
-        padding-top: 0;
-    }
 
     @include mq($bp-medium) {
-        grid-template-columns: 3fr 1.1fr;
+        grid-template-columns: 2fr .68fr;
+        padding-top: 0;
     }
 
     @include mq($bp-lowerlarge) {
@@ -51,6 +48,17 @@
         font-size:  clamp(2rem, 0.93vw + 1.67rem, 3rem);
         font-size: 2rem;
         line-height: 100%;
+        padding-top: .8rem;
+
+        & > a {
+            border: 1px black solid;
+            // border-radius: 2rem;
+            padding: .1rem .8rem;
+            background-color: black;
+            color: white;
+
+        }
+
 
 
 

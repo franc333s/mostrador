@@ -8,10 +8,13 @@
 
         &__title {
             font-size: $fs-product-page-fig-text;
-            font-size: 1.4rem;
             display: flex;
             gap: .6rem;
-            padding-left: .2rem;
+            padding-left: clamp(0.4rem, 0.38vw + 0.25rem, 0.8rem);
+
+            @include mq($bp-lowerlarge) {
+                padding-left: .2rem;
+            }
         }
 
         &__img {

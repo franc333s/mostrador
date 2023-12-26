@@ -9,7 +9,6 @@
 
     &__item {
         color: $color-black;
-        font-size: 1.8rem;
         padding-bottom: 4rem;
         position: relative;
         z-index: 2;
@@ -27,27 +26,50 @@
         &__front:hover {
     
             @include mq($bp-medium) {
-                transform: translate(0, -5.2rem);
+                transform: translate(0, -2.4rem);
             }
         }
 
         &__back {
             z-index: -1;
             width: 99%;
+            padding-left: clamp(0.4rem, 0.38vw + 0.25rem, 0.8rem);;
             display: flex;
             justify-content: space-between;
+            font-size: 1.4rem;
+            line-height: 1;
+
+            @include mq($bp-medium, max-width) {
+                width: 88%;
+             }
+
+            @include mq($bp-medium) {
+                padding-left: .2rem;
+            }
+
+            
+
+            &--flex {
+                display: flex;
+                gap: 1rem;
+            }
 
     
             @include mq($bp-medium) {
                 position: absolute;
-                padding-bottom: .8rem;
+                padding-bottom: .4rem;
             }
         }
     }
 
     &__id {
         font-size: 1.4rem;
-        padding-left: .2rem;
+        padding-left: clamp(0.4rem, 0.38vw + 0.25rem, 0.8rem);
+
+        @include mq($bp-medium) {
+            padding-left: .2rem;
+        }
+        
     }
 
     &__img {
@@ -55,6 +77,12 @@
     }
 
     &__info {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+    }
+
+    &__inq {
+        border: 1px solid black;
+        // border-radius: 1rem;
+        padding: .2rem .6rem;
     }
 }

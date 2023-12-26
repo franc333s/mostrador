@@ -4,17 +4,16 @@
 .product-intro {
     display: grid;
     grid-template-columns: 2.5fr 2fr 1fr;
-    //revisar medidas
     row-gap: 2.4rem;
     padding: clamp(0.4rem, 0.76vw + 0.1rem, 1.2rem) $vertical-padding 0;
 
 
     @include mq($bp-medium) {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr .6fr .4fr .6fr;
     }
 
     @include mq($bp-lowerlarge) {
-        grid-template-columns: .35fr .35fr .35fr .35fr 1.5fr;
+        grid-template-columns: .6fr .5fr .3fr .35fr 1.5fr;
     }
 
     &__title {
