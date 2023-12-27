@@ -1,22 +1,22 @@
-import { useEffect, useState } from "react";
-import Mostrador20 from "./mostrador-variations/Mostrador20";
-import Mostrador40 from "./mostrador-variations/Mostrador40";
-import Mostrador60 from "./mostrador-variations/Mostrador60";
-import Mostrador80 from "./mostrador-variations/Mostrador80";
-import Mostrador100 from "./mostrador-variations/Mostrador100";
-import Mostrador120 from "./mostrador-variations/Mostrador120";
-import Mostrador140 from "./mostrador-variations/Mostrador140";
-import Mostrador160 from "./mostrador-variations/Mostrador160";
-import Mostrador180 from "./mostrador-variations/Mostrador180";
-import Mostrador200 from "./mostrador-variations/Mostrador200";
-import Mostrador220 from "./mostrador-variations/Mostrador220";
-import Mostrador240 from "./mostrador-variations/Mostrador240";
-import Mostrador260 from "./mostrador-variations/Mostrador260";
-import Mostrador280 from "./mostrador-variations/Mostrador280";
-import Mostrador300 from "./mostrador-variations/Mostrador300";
-
+import React, { useEffect, useState } from "react";
 import "./Mostrador.scss"
 
+// Use of import() as code splitting to reduce chunks
+const Mostrador20 = React.lazy(() => import ("./mostrador-variations/Mostrador20"));
+const Mostrador40 = React.lazy(() => import ("./mostrador-variations/Mostrador40"));
+const Mostrador60 = React.lazy(() => import ("./mostrador-variations/Mostrador60"));
+const Mostrador80 = React.lazy(() => import ("./mostrador-variations/Mostrador80"));
+const Mostrador100 = React.lazy(() => import ("./mostrador-variations/Mostrador100"));
+const Mostrador120 = React.lazy(() => import ("./mostrador-variations/Mostrador120"));
+const Mostrador140 = React.lazy(() => import ("./mostrador-variations/Mostrador140"));
+const Mostrador160 = React.lazy(() => import ("./mostrador-variations/Mostrador160"));
+const Mostrador180 = React.lazy(() => import ("./mostrador-variations/Mostrador180"));
+const Mostrador200 = React.lazy(() => import ("./mostrador-variations/Mostrador200"));
+const Mostrador220 = React.lazy(() => import ("./mostrador-variations/Mostrador220"));
+const Mostrador240 = React.lazy(() => import ("./mostrador-variations/Mostrador240"));
+const Mostrador260 = React.lazy(() => import ("./mostrador-variations/Mostrador260"));
+const Mostrador280 = React.lazy(() => import ("./mostrador-variations/Mostrador280"));
+const Mostrador300 = React.lazy(() => import ("./mostrador-variations/Mostrador300"));
 
 const Mostrador = () => {
 

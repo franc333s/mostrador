@@ -1,27 +1,30 @@
+import React, { useState, useEffect } from "react";
 import { collection, getDocs, query, where } from "firebase/firestore";
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
-import Footer from "../components/footer/Footer";
-import ProductDescription from "../components/productPage/productDescription/ProductDescription";
-import ProductGallery from "../components/productPage/productGallery/ProductGallery"
-import ProductHero from "../components/productPage/productHero/ProductHero"
-import ProductIntro from "../components/productPage/productIntro/ProductIntro";
-import Topbar from "../components/topbar/Topbar";
-
 import db from "../firebase/config";
 
-import Mostrador20 from "../components/homePage/mostrador/mostrador-variations/Mostrador20";
-import Mostrador40 from "../components/homePage/mostrador/mostrador-variations/Mostrador40";
-import Mostrador60 from "../components/homePage/mostrador/mostrador-variations/Mostrador60";
-import Mostrador80 from "../components/homePage/mostrador/mostrador-variations/Mostrador80";
-import Mostrador100 from "../components/homePage/mostrador/mostrador-variations/Mostrador100";
-import Mostrador120 from "../components/homePage/mostrador/mostrador-variations/Mostrador120";
-import Mostrador140 from "../components/homePage/mostrador/mostrador-variations/Mostrador140";
-import Mostrador160 from "../components/homePage/mostrador/mostrador-variations/Mostrador160";
-import Mostrador180 from "../components/homePage/mostrador/mostrador-variations/Mostrador180";
-import Mostrador200 from "../components/homePage/mostrador/mostrador-variations/Mostrador200";
-import Mostrador220 from "../components/homePage/mostrador/mostrador-variations/Mostrador220";
-import Mostrador240 from "../components/homePage/mostrador/mostrador-variations/Mostrador240";
+
+// Import() components
+const Topbar = React.lazy(() => import ("../components/topbar/Topbar"));
+const ProductHero = React.lazy(() => import ("../components/productPage/productHero/ProductHero"));
+const ProductIntro = React.lazy(() => import ("../components/productPage/productIntro/ProductIntro"));
+const ProductDescription = React.lazy(() => import ("../components/productPage/productDescription/ProductDescription"));
+const ProductGallery = React.lazy(() => import ("../components/productPage/productGallery/ProductGallery"));
+const Footer = React.lazy(() => import ("../components/footer/Footer"));
+
+// Import() svg
+const Mostrador20 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador20"));
+const Mostrador40 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador40"));
+const Mostrador60 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador60"));
+const Mostrador80 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador80"));
+const Mostrador100 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador100"));
+const Mostrador120 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador120"));
+const Mostrador140 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador140"));
+const Mostrador160 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador160"));
+const Mostrador180 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador180"));
+const Mostrador200 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador200"));
+const Mostrador220 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador220"));
+const Mostrador240 = React.lazy(() => import ("../components/homePage/mostrador/mostrador-variations/Mostrador240"));
 
 function ProductPage() {
 

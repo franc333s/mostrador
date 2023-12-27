@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import db from "../../../../firebase/config";
-import ProductCard from "../ProductCard/ProductCard";
 import "./ProductsFeed.scss";
-import Topbar from "../../../topbar/Topbar";
+
+// Use of import() as code splitting to reduce chunks
+const ProductCard = React.lazy(() => import("../ProductCard/ProductCard"));
 
 
 function ProductsFeed() {
