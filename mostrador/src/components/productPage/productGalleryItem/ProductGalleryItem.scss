@@ -19,6 +19,15 @@
 
         &__img {
             width: 100%;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+
+                @include mq($bp-medium) {
+                    filter: invert(100%);
+
+                }
+            }
         }
     }
 }

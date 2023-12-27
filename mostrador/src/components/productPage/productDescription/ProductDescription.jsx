@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import ButtonPrimary from "../../buttons/ButtonPrimary"
 import "./ProductDescription.scss"
 
 
@@ -20,7 +21,7 @@ function ProductDescription({ productDescription, editionType }) {
 
                 <div>
                     <p className="product-desc__title">Purchase</p>
-                    <p className="product-desc__cta"><Link to="mailto:contact@mostradorgallery.com">Inquire</Link></p>
+                    <ButtonPrimary to="mailto:contact@mostradorgallery.com" text="Inquire" openInNewTab />
                 </div>
             </aside>
         </section>

@@ -32,6 +32,10 @@
         &:not(:last-child)::after {
             content: ",";
         }
+
+        &:hover {
+            font-style: italic;
+        }
     }
     
 
@@ -42,19 +46,22 @@
 
     // Topbar home
     &--home {
-        color: $color-black;
-        background-color: $color-bg-white;
+        color: $color-white;
+        mix-blend-mode: difference;
+        //background-color: $color-bg-white;
         padding: $vertical-padding;
-        position: absolute;
+        // position: absolute;
+        position: sticky;
+        top: 0;
         z-index: 1;
     }
 
     &--fixed {
-        background-color: transparent;
-        position: fixed;
-        top: 1.9rem;
-        left: 0;
-        width: 100%;
-        z-index: 3;
+        // background-color: transparent;
+        // position: fixed;
+        // top: 1.9rem;
+        // left: 0;
+        // width: 100%;
+        // z-index: 3;
     }
 }

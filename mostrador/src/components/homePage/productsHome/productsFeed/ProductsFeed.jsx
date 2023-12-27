@@ -3,6 +3,7 @@ import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import db from "../../../../firebase/config";
 import ProductCard from "../ProductCard/ProductCard";
 import "./ProductsFeed.scss";
+import Topbar from "../../../topbar/Topbar";
 
 
 function ProductsFeed() {
@@ -29,7 +30,11 @@ function ProductsFeed() {
 
     return (
         <> 
-        <main className="products">
+        
+        
+
+        <main className="products-feed">
+
             {products.map((product) => 
             <ProductCard 
                 key={product.id}

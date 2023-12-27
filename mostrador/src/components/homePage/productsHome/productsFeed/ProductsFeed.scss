@@ -2,13 +2,13 @@
 @import "../../../../scss/mixins";
 
 
-.products {
+.products-feed {
     color: $color-black;
     background-color: $color-bg-white;
     padding-top: clamp(14rem, 5.71vw + 11.77rem, 20rem);
     display: grid;
     grid-template-columns: 1fr;
-    z-index: 1;
+    z-index: 0;
 
     @include mq($bp-lowermedium) {
         grid-template-columns: repeat(2, 1fr);

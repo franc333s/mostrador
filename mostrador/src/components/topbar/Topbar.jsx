@@ -35,15 +35,25 @@ function Topbar () {
         return (
             <>
             <nav className={`topbar--home ${addStaticClass ? 'topbar--fixed' : ''}`}>
-                <h1 className="topbar__title text-trans--uppercase"><Link to="/">Mostador / Gallery</Link></h1>
+                <h1 className="topbar__title text-trans--uppercase">
+                    <Link to="/">Mostador / Gallery</Link>
+                </h1>
                 <ul className="topbar__inner">
-                    <li className="topbar__inner__item text-trans--uppercase">→ <Link to="/">Works</Link></li>
+                    <li className="topbar__inner__item text-trans--uppercase">
+                        → <Link to="/">Works</Link>
+                    </li>
     
-                    <li className="topbar__inner__item text-trans--uppercase">&nbsp;<Link to="/about">About</Link></li>
+                    <li className="topbar__inner__item text-trans--uppercase">
+                        &nbsp;<Link to="/about">About</Link>
+                    </li>
                     
-                    <li className="topbar__inner__item text-trans--uppercase">&nbsp;<Link to="mailto:info@mostradorgallery.com">Contact</Link></li>
+                    <li className="topbar__inner__item text-trans--uppercase">
+                        &nbsp;<Link to="mailto:info@mostradorgallery.com">Contact</Link>
+                    </li>
     
-                    <li className="topbar__inner__item text-trans--uppercase">&nbsp;<Link to="https://www.instagram.com/mostradorgallery/" target="_blank">Instagram</Link></li>
+                    <li className="topbar__inner__item text-trans--uppercase">
+                        &nbsp;<Link to="https://www.instagram.com/mostradorgallery/" target="_blank">Instagram</Link>
+                    </li>
                 </ul>
             </nav>
             </>
@@ -53,15 +63,25 @@ function Topbar () {
         return (
             <>
             <nav className="topbar">
-                <p className="topbar__title text-trans--uppercase"><Link to="/">Mostador / Gallery</Link></p>
+                <p className="topbar__title text-trans--uppercase">
+                    <Link to="/">Mostador / Gallery</Link>
+                </p>
                 <ul className="topbar__inner">
-                    <li className="topbar__inner__item text-trans--uppercase">→ <Link to="/">Works</Link></li>
+                    <li className="topbar__inner__item text-trans--uppercase">
+                        → <Link to="/">Works</Link>
+                    </li>
     
-                    <li className="topbar__inner__item text-trans--uppercase">&nbsp;<Link to="/about">About</Link></li>
+                    <li className="topbar__inner__item text-trans--uppercase">
+                        &nbsp;<Link to="/about">About</Link>
+                    </li>
                     
-                    <li className="topbar__inner__item text-trans--uppercase">&nbsp;<Link to="mailto:info@mostradorgallery.com">Contact</Link></li>
+                    <li className="topbar__inner__item text-trans--uppercase">
+                        &nbsp;<Link to="mailto:info@mostradorgallery.com">Contact</Link>
+                    </li>
     
-                    <li className="topbar__inner__item text-trans--uppercase">&nbsp;<Link to="https://www.instagram.com/mostradorgallery/" target="_blank">Instagram</Link></li>
+                    <li className="topbar__inner__item text-trans--uppercase">
+                        &nbsp;<Link to="https://www.instagram.com/mostradorgallery/" target="_blank">Instagram</Link>
+                    </li>
                 </ul>
             </nav>
     

@@ -1,0 +1,30 @@
+@import "../../scss/sass-variables";
+@import "../../scss/mixins";
+
+.btn {
+
+    &--primary {
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 100%;
+        padding-top: .8rem;
+
+        & > a {
+            color: $color-white;
+            background-color: $color-bg-black;
+            text-decoration: none;
+            border: 2px black solid;
+            padding: .1rem .8rem;
+            transition: .3s;
+
+            &:hover,
+            &:focus {
+
+                @include mq($bp-medium) {
+                    color: black;
+                    box-shadow: inset 0 -2.5em 0 0 white;
+                }
+            }
+        }
+    }
+}
