@@ -18,10 +18,9 @@ function ProductCard({ url, index, productImg, productImgAltText, productName, p
                     <div className="one-product__item__back">
                         <div className="one-product__item__back--flex">
                             <h2 className="one-product__info"><span className="text-trans--uppercase">{productName}</span></h2>
-                            {/* REVISAR CODIGO DE AQUI EN CSS PORQUE SE HA ELIMINADO UNA CATEGORIA */}
                             <h3 className="one-product__info">{designer}</h3>
                         </div>
-                        <p className="one-product__inq">Inquire</p>
+                        <p className="one-product__inq">[Inquire]</p>
                     </div>
 
             </article>

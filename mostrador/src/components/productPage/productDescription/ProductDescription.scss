@@ -5,22 +5,22 @@
     font-size: $fs-product-page-text;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: clamp(2.8rem, 10.45vw + -0.96rem, 12rem);
+    //gap: clamp(2.8rem, 10.45vw + -0.96rem, 12rem);
     padding: clamp(4rem, -5.29vw + 6.06rem, 2rem) $vertical-padding 0;
 
     @include mq($bp-lowermedium) {
         grid-template-columns: 2fr .5fr;
     }
 
-
     @include mq($bp-medium) {
-        grid-template-columns: 2fr .68fr;
+        grid-template-columns: 2fr .6fr;
         padding-top: 0;
     }
 
     @include mq($bp-lowerlarge) {
-        grid-template-columns: 2fr 1.13fr;
-        padding-top: 0;
+        grid-template-columns: 2fr 1fr;
+        column-gap: .6rem;
+
     }
 
     &__title {
@@ -34,7 +34,10 @@
         font-size:  2rem;
         line-height: 100%;
         // revisar line height en about
-        
+
+        &--width {
+            max-width: 90%;
+        }
     }
 
     &__aside {
@@ -67,3 +70,5 @@
         }
     }
 }
+
+

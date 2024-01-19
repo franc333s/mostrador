@@ -1,17 +1,19 @@
 import React from "react";
+import Topbar from "../components/topbar/Topbar";
+import Footer from "../components/footer/Footer";
 
 // Import() components
-const HeroHome = React.lazy(() => import ("../components/homePage/heroHome/HeroHome"));
-const Topbar = React.lazy(() => import ("../components/topbar/Topbar"));
-const ProductsFeed = React.lazy(() => import ("../components/homePage/productsHome/productsFeed/ProductsFeed"));
-const Footer = React.lazy(() => import ("../components/footer/Footer"));
+const LazyHeroHome = React.lazy(() => import ("../components/homePage/heroHome/HeroHome"));
+const LazyProductsFeed = React.lazy(() => import ("../components/homePage/productsHome/productsFeed/ProductsFeed"));
+
+
 
 function Home() {
     return (
         <>
-            <HeroHome />
+            <LazyHeroHome />
             <Topbar />
-            <ProductsFeed />
+            <LazyProductsFeed />
             <Footer />
         </>
     );

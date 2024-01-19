@@ -8,7 +8,7 @@
         z-index: -1;
 
         @include mq($bp-lowerlarge) {
-            height: 96vh;
+            height: 86vh;
             object-fit: cover;
         }
     }

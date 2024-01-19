@@ -13,7 +13,7 @@ function About() {
                 <div className="about__sect__flex">
                     <div>
                         <p className="about__title">Email</p>
-                        <h1 className="about__text"><Link to="mailto:contact@mostradorgallery.com" target="_blank">contact@mostradorgallery.com</Link></h1>
+                        <h1 className="about__text"><Link to="mailto:info@mostradorgallery.com" target="_blank">info@mostradorgallery.com</Link></h1>
                     </div>
                     <div>
                         <p className="about__title">Based</p>
@@ -29,8 +29,8 @@ function About() {
             </section>
                 
             <div className="about__div">
-                <p className="about__title--variation">&#96; &#96; &#96; &#96; Em Ou Es Ti Ar Ei Di Ou Ar</p>
-                <img className="about__img" src="/mostrador-contacto.png" alt="alt de la imagen" />
+                <p className="about__title--variation">[em] [ou] [es] [ti] [ar] [ei] [di] [ou] [ar]</p>
+                <img className="about__img" src="/EU-plan/mostrador-contacto.jpg" alt="Mostrador proyecto subvencionado por la UE" />
             </div>
 
         </main>

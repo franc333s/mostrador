@@ -17,11 +17,11 @@
         align-items: end;
     }
 
-    @include mq($bp-medium) {
+    @include mq($bp-lowerlarge) {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    @include mq($bp-lowerlarge) {
+    @include mq($bp-xlowerlarge) {
         grid-template-columns: repeat(4, 1fr);
     }
 }

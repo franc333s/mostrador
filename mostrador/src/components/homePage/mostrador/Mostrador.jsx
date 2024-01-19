@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Mostrador.scss"
 
-// Use of import() as code splitting to reduce chunks
+// Import() components
 const Mostrador20 = React.lazy(() => import ("./mostrador-variations/Mostrador20"));
 const Mostrador40 = React.lazy(() => import ("./mostrador-variations/Mostrador40"));
 const Mostrador60 = React.lazy(() => import ("./mostrador-variations/Mostrador60"));

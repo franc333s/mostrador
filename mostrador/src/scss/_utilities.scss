@@ -8,13 +8,10 @@
 }
 
 .preloader {
-    fill: black;
-    padding: 1.2rem;
-
+    min-height: 72vh;
     display: flex;
-    flex-direction: column;
-
-    & > svg {
-        padding-bottom: 1.2rem;
-    }
+    justify-content: center;
+    align-items: center;
 }
+
+

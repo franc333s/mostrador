@@ -20,7 +20,7 @@
         margin-top: clamp(24rem, 66.66vw + 0rem, 77.66rem);
 
         @include mq($bp-lowerlarge) {
-            margin-top: 96vh;
+            margin-top: 82vh;
         }
 
     }

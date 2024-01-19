@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import ButtonPrimary from "../../buttons/ButtonPrimary"
 import "./ProductDescription.scss"
 
@@ -10,7 +9,7 @@ function ProductDescription({ productDescription, editionType }) {
         <section className="product-desc">
             <div>
                 <p className="product-desc__title">About</p>
-                <p className="product-desc__text">{productDescription}</p>
+                <p className="product-desc__text product-desc__text--width">{productDescription}</p>
             </div>
 
             <aside className="product-desc__aside">

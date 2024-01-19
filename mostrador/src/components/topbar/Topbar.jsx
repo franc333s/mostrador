@@ -39,8 +39,8 @@ function Topbar () {
                     <Link to="/">Mostador / Gallery</Link>
                 </h1>
                 <ul className="topbar__inner">
-                    <li className="topbar__inner__item text-trans--uppercase">
-                        → <Link to="/">Works</Link>
+                    <span className="topbar__inner__item__arrow">→&nbsp;</span><li className="topbar__inner__item text-trans--uppercase">
+                        <Link to="/">Works</Link>
                     </li>
     
                     <li className="topbar__inner__item text-trans--uppercase">
@@ -67,8 +67,8 @@ function Topbar () {
                     <Link to="/">Mostador / Gallery</Link>
                 </p>
                 <ul className="topbar__inner">
-                    <li className="topbar__inner__item text-trans--uppercase">
-                        → <Link to="/">Works</Link>
+                    <span className="topbar__inner__item__arrow">→&nbsp;</span><li className="topbar__inner__item text-trans--uppercase">
+                        <Link to="/">Works</Link>
                     </li>
     
                     <li className="topbar__inner__item text-trans--uppercase">
