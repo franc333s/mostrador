@@ -19,8 +19,12 @@
         background-color: $color-bg-white;
         margin-top: clamp(24rem, 66.66vw + 0rem, 77.66rem);
 
+        @include mq($bp-uppermedium) {
+            margin-top: 74vh;
+        }
+
         @include mq($bp-lowerlarge) {
-            margin-top: 82vh;
+            margin-top: 86vh;
         }
 
     }
@@ -48,4 +52,15 @@
             }
         }
     }
+}
+
+.language-selector {
+    position: fixed;
+    right: $vertical-padding;
+    top: .4rem;
+
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    padding: .2rem;
 }

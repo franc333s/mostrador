@@ -13,9 +13,11 @@
   "dependencies": {
     "@babel/traverse": "^7.23.2",
     "firebase": "^10.7.1",
+    "i18next": "^23.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
+    "react-i18next": "^14.0.1",
     "react-router-dom": "^6.16.0",
     "react-spinners": "^0.13.8",
     "sass": "^1.69.1"

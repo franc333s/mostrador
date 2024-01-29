@@ -1,0 +1,10 @@
+{   
+    "languageSelector": {
+        "chooseLanguage": "Idioma:"
+    },
+    "about": {
+        "based": "Localización",
+        "about": "Sobre",
+        "aboutDef":"Fundado en 2023, Mostrador se dedica a exhibir obras en la intersección del arte y el diseño, donde la utilidad de un objeto se encuentra con su potencial estético. Mostrador ofrece una plataforma para que artistas y diseñadores se familiaricen con los límites de la función y la forma, mostrando talentos establecidos y emergentes. En Mostrador creemos que el proceso de creación es tan importante como el producto terminado, y nuestro programa curatorial destaca lo único. narrativas detrás de cada pieza. Estamos comprometidos a promover el acceso a las artes, defender la diversidad en el diseño y explorar las intersecciones de disciplinas. A través de nuestros trabajos y publicaciones, nos esforzamos por inspirar y desafiar las percepciones de lo que es posible en el diseño."
+    }
+}

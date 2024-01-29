@@ -9,6 +9,7 @@ const LazyProductsFeed = React.lazy(() => import ("../components/homePage/produc
 
 
 function Home() {
+
     return (
         <>
             <LazyHeroHome />

@@ -7,6 +7,11 @@
         width: 100%;
         z-index: -1;
 
+        @include mq($bp-uppermedium) {
+            height: 74vh;
+            object-fit: cover;
+        }
+
         @include mq($bp-lowerlarge) {
             height: 86vh;
             object-fit: cover;

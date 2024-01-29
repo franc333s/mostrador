@@ -72,6 +72,10 @@ $bp-xlowerlarge: 84rem; // 1344px
 $bp-large: 90rem; // 1440px
 $bp-xlarge: 120rem; // 1920px
 
+// Mq for ipad
+$bp-portrait: $bp-medium;
+$bp-landscape: 64rem; // 1024px
+
 
 // Padding implementations
 

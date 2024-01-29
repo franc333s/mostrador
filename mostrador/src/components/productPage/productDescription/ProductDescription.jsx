@@ -6,7 +6,7 @@ function ProductDescription({ productDescription, editionType }) {
 
     return (
         <>
-        <section className="product-desc">
+        <section className="product-desc aux-padding">
             <div>
                 <p className="product-desc__title">About</p>
                 <p className="product-desc__text product-desc__text--width">{productDescription}</p>

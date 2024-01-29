@@ -72,3 +72,15 @@
 }
 
 
+@media all and (max-device-height: 1024px) and (orientation:portrait) {
+    .aux-padding { 
+        //background-color: red; 
+        padding-top: 3.2rem;
+    } 
+  }
+  @media all and (max-device-height: 1024px) and (orientation:landscape) {
+    .aux-padding { 
+        //background-color: blue; 
+        padding-top: 3.2rem;
+    } 
+  }
